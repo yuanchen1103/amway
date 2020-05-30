@@ -1,0 +1,293 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.logo {
+  height: 30px;
+  margin: 30px 0;
+}
+
+.title {
+  font-size: 24px;
+  margin-top: 40px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #2e3875;
+  line-height: 30px;
+}
+
+.desc {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #5a5a5a;
+  line-height: 25px;
+}
+
+.hero-image-container {
+  margin-left: -15px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hero-image {
+  height: 279px;
+}
+
+.gray-pattern {
+  display: none;
+}
+
+.bg-wrapper {
+  width: 100vw;
+  min-height: 600px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.bg-container {
+  width: 320px;
+  min-height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.bg {
+  position: absolute;
+  width: 700px;
+  z-index: -1;
+  top: -230px;
+  right: -480px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.icon {
+  width: 144px;
+}
+
+.app-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.app-feat li {
+  font-size: 18px;
+  color: #5a5a5a;
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+.phone-group {
+  margin: 80px auto 0;
+  height: 640px;
+  width: 290px;
+  position: relative;
+}
+
+.phone {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone-pattern {
+  position: absolute;
+  width: 152px;
+  z-index: -1;
+  top: -25px;
+  left: -30px;
+}
+
+.gray-bg {
+  display: none;
+}
+
+.download-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.download-group-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-group-child:first-child {
+  margin-right: 40px;
+}
+
+.download-group-child img {
+  width: 100px;
+}
+
+.qrcode {
+  display: none;
+}
+
+.footer {
+  width: 100vw;
+  height: 40px;
+  background-color: #2e3875;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 576px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    height: 40px;
+    margin: 30px 0;
+  }
+
+  .title br {
+    display: none;
+    line-height: 1;
+  }
+
+
+  .hero-image-container {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 40px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .gray-pattern {
+    width: 182px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    margin-left: -60px;
+    margin-top: -95px;
+  }
+
+  .bg-container {
+    width: 576px;
+  }
+  
+  .bg {
+    top: -260px;
+    right: -310px;
+  }
+
+  .qrcode {
+    display: block;
+    width: 124px !important;
+  }
+}
+
+@media (min-width: 1007px) {
+  .container {
+    width: 1007px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .desc {
+    margin-bottom: 90px;
+  }
+
+  .bg-wrapper {
+    min-height: 800px;
+  }
+
+  .bg-container {
+    width: 1007px;
+  }
+
+  .bg {
+    width: 950px;
+    top: -310px;
+    right: -260px;
+  }
+
+  .row {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .app-desc {
+    margin-top: 95px;
+    width: 500px;
+  }
+  
+  .icon {
+    width: 114px;
+  }
+  
+  .app-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .app-feat li {
+    font-size: 18px;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+    list-style-type: disc;
+  }
+
+  .phone-group {
+    margin-top: 0;
+  }
+
+  .phone {
+    width: 500px;
+  }
+
+  .phone-pattern {
+    top: 365px;
+    left: -100px;
+  }
+
+  .gray-bg {
+    display: block;
+    background-color: #f9f9f9;
+    height: 424px;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    z-index: -2;
+    margin-top: 150px;
+  }
+
+  .download-group {
+    margin-bottom: 200px;
+  }
+}
